@@ -17,12 +17,12 @@ File upload component for Asp.Net MVC projects
 * Views\Shared\EditorTemplates
  * **FileUploadViewModel.cshtml**
 * App_Start
- * MapperConfig 
+ * **MapperConfig**
 * Content
  * bootstrap.css
  * jasny-bootstrap.css
 * Scripts
- * *fileupload.js*
+ * **fileupload.js**
  * jquery.js
  * bootstrap.js
  * jasny-bootstrap.js
