@@ -1,0 +1,10 @@
+﻿@model SampleViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.Partial("_CreateOrEdit")
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

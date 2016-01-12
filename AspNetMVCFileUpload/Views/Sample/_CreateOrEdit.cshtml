@@ -1,0 +1,19 @@
+﻿@model SampleViewModel 
+    
+@Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.File, new { @class = "col-md-2 control-label" })
+        <div class="col-md-8">
+            @Html.EditorFor(m => m.File, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.File, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+</div>

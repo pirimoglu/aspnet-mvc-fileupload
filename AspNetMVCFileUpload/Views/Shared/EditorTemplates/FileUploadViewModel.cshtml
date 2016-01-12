@@ -1,0 +1,20 @@
+﻿@model FileUploadViewModel
+
+<div class="file-upload">
+    <div class="fileinput input-group @(string.IsNullOrEmpty(Model.Name) ? "fileinput-new" : "fileinput-exists")" data-provides="fileinput">
+        <div class="form-control" data-trigger="fileinput">
+            <i class="glyphicon glyphicon-file fileinput-exists"></i>
+            <span class="fileinput-filename">@Model.Name</span>
+            @Html.HiddenFor(m => m.Name)
+        </div>
+        <span class="input-group-addon btn btn-default btn-file">
+            <span class="fileinput-new">Choose File</span>
+            <span class="fileinput-exists">Change</span>
+            <input type="file" />
+            @Html.HiddenFor(m => m.Content)
+        </span>
+        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Delete</a>
+    </div>
+</div>
+@Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+@Html.ValidationMessageFor(m => m.Content, "", new { @class = "text-danger" })
