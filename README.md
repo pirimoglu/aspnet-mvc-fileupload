@@ -11,11 +11,18 @@ File upload component for Asp.Net MVC projects
 **Basic Elements**
 
 * Entities
- * FileUpload
+ * **FileUpload**
 * Models
-
+ * **FileUploadViewModel**
+* Views\Shared\EditorTemplates
+ * **FileUploadViewModel.cshtml**
 * App_Start
  * MapperConfig 
 * Content
  * bootstrap.css
  * jasny-bootstrap.css
+* Scripts
+ * *fileupload.js*
+ * jquery.js
+ * bootstrap.js
+ * jasny-bootstrap.js
