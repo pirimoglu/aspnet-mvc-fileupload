@@ -138,6 +138,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="MainContext.cs" />
+    <Compile Include="Models\ImageUploadViewModel.cs" />
     <Compile Include="Models\FileUploadViewModel.cs" />
     <Compile Include="Models\SampleViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -196,6 +197,7 @@
     <Content Include="Views\Sample\Create.cshtml" />
     <Content Include="Views\Sample\Edit.cshtml" />
     <Content Include="Views\Sample\_CreateOrEdit.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ImageUploadViewModel.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -22,6 +22,8 @@ namespace AspNetMVCFileUpload.Controllers
         public ActionResult Create()
         {
             var model = new SampleViewModel();
+            model.Image.Width = 100;
+            model.Image.Height = 100;
             return View(model);
         }
         
@@ -41,6 +43,8 @@ namespace AspNetMVCFileUpload.Controllers
             var context = new MainContext();
             var sample = context.Samples.FirstOrDefault(s => s.Id == id);
             var model = Mapper.Map<SampleViewModel>(sample);
+            model.Image.Width = 100;
+            model.Image.Height = 100;
             return View(model);
         }
         

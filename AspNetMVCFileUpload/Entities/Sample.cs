@@ -9,5 +9,6 @@ namespace AspNetMVCFileUpload.Entities
     {
         public int Id { get; set; }
         public FileUpload File { get; set; }
+        public FileUpload Image { get; set; }
     }
 }

@@ -8,9 +8,11 @@ namespace AspNetMVCFileUpload.Models
         public SampleViewModel()
         {
             File = new FileUploadViewModel();
+            Image = new ImageUploadViewModel();
         }
 
         public int Id { get; set; }
         public FileUploadViewModel File { get; set; }
+        public ImageUploadViewModel Image { get; set; }
     }
 }

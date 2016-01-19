@@ -9,6 +9,7 @@ namespace AspNetMVCFileUpload
         public static void RegisterObjectMappings()
         {
             Mapper.CreateMap<FileUploadViewModel, FileUpload>().ReverseMap();
+            Mapper.CreateMap<ImageUploadViewModel, FileUpload>().ReverseMap();
             Mapper.CreateMap<SampleViewModel, Sample>().ReverseMap();
         }
     }
